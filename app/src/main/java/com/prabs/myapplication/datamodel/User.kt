@@ -4,14 +4,14 @@ import java.io.Serializable
 
 data class Results(
     var results: ArrayList<User>,
-    var info : Info
+    var info: Info
 ) : Serializable
 
 data class User(
-    var gender: String,
-    var name: Name,
-    var location: Location,
-    var picture: Picture /* ,
+    var gender: String?,
+    var name: Name?,
+    var location: Location?,
+    var picture: Picture,
     var email: String,
     var login: Login,
     var dob: DoB,
@@ -19,7 +19,7 @@ data class User(
     var phone: String,
     var cell: String,
     var id: ID,
-    var nat: String*/
+    var nat: String
 ) : Serializable
 
 data class Name(
@@ -79,14 +79,14 @@ data class ID(
 ) : Serializable
 
 data class Picture(
-    var large : String,
-    var medium : String,
-    var thumbnail : String
+    var large: String,
+    var medium: String,
+    var thumbnail: String
 ) : Serializable
 
 data class Info(
-    var seed : String,
-    var results : String,
-    var page : String,
-    var version : String
+    var seed: String,
+    var results: String,
+    var page: String,
+    var version: String
 ) : Serializable

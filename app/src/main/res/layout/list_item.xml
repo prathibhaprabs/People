@@ -16,8 +16,8 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/userImage"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:src="@drawable/ic_launcher_background"
             app:shapeAppearanceOverlay="@style/circleImageView" />
 
@@ -42,8 +42,8 @@
                 tools:text="Gender" />
 
             <TextView
-                android:id="@+id/locationsTv"
-                android:layout_width="wrap_content"
+                android:id="@+id/location_tv"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center|start"
                 app:drawableRightCompat="@drawable/ic_baseline_location_on"

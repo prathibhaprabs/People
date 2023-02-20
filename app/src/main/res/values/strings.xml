@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">People</string>
+    <string name="error_text">Data loading failed.\nPlease try again later!</string>
 </resources>
