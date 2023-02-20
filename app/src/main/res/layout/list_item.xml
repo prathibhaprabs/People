@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dimen4"
+    app:cardElevation="@dimen/dimen4"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen4">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/userImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher_background"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dimen8"
+            android:paddingEnd="@dimen/dimen8">
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/genderTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Gender" />
+
+            <TextView
+                android:id="@+id/locationsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                app:drawableRightCompat="@drawable/ic_baseline_location_on"
+                tools:text="Location" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
